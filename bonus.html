@@ -6,34 +6,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <link rel="stylesheet" href="bonus.css">
-  <script src="app.js" defer></script>
+  <script src="bonus.js" defer></script>
 </head>
 
 <body>
-  <div class="main">
-    <div class="main_results">
-      <h1 class="main_results-title">Rock paper Scissors lizard Spock</h1>
+  <div class="bonus">
+    <div class="bonus_results">
+      <h1 class="bonus_results-title">Rock paper Scissors lizard Spock</h1>
 
-      <div class="main_results-score score">
+      <div class="bonus_results-score score">
         <p class="score_title">Score</p>
         <p class="total_score" id="score">0</p>
       </div>
     </div>
-
     <div class="board" id="board1">
-      <div class="board_select" id="paper" onclick="handleClick(this)">
+      <div class="board_select_5" id="paper" onclick="handleClick(this)">
         <img src="images/icon-paper.svg" alt="Paper" class="board_select-img" />
       </div>
-      <div class="board_select" id="scissors" onclick="handleClick(this)">
+      <div class="board_select_5" id="scissors" onclick="handleClick(this)">
         <img src="images/icon-scissors.svg" alt="Scissors" class="board_select-img" />
       </div>
-      <div class="board_select" id="rock" onclick="handleClick(this)">
+      <div class="board_select_5" id="rock" onclick="handleClick(this)">
         <img src="images/icon-rock.svg" alt="Rock" class="board_select-img" />
       </div>
-      <div class="board_select" id="lizard" onclick="handleClick(this)">
+      <div class="board_select_5" id="lizard" onclick="handleClick(this)">
         <img src="images/icon-lizard.svg" alt="Lizard" class="board_select-img" />
       </div>
-      <div class="board_select" id="spock" onclick="handleClick(this)">
+      <div class="board_select_5" id="spock" onclick="handleClick(this)">
         <img src="images/icon-spock.svg" alt="Spock" class="board_select-img" />
       </div>
     </div>
@@ -54,16 +53,18 @@
         <button class="results_center-btn" id="playAgain">Play again</button>
       </div>
     </div>
-    <button class="main_rules" id="rules">Rules</button>
+    <button class="bonus_rules" id="rules">Rules</button>
+    <a href="./index.html"><button class="main_bonus" id="bonus">Game_type 3</button></a>
+
   </div>
 
-  <div class="rules-modal hide" id="modal">
-    <div class="rules-modal_inner">
-      <div class="rules-modal_top">
-        <h2 class="rules-modal_top-title">rules</h2>
+  <div class="bonus_rules-modal hide" id="modal">
+    <div class="bonus_rules-modal_inner">
+      <div class="bonus_rules-modal_top">
+        <h2 class="bonus_rules-modal_top-title">rules</h2>
 
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="rules-modal_top-icon" id="close">
-          <path fill="#3B4262" class="rule-modal_top-icon-fill"
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="bonus_rules-modal_top-icon" id="close">
+          <path fill="#3B4262" class="bonus_rule-modal_top-icon-fill"
             d="M16.97 0l2.122 2.121-7.425 7.425 7.425 7.425-2.121 2.12-7.425-7.424-7.425 7.425L0 16.97l7.425-7.425L0 2.121 2.121 0l7.425 7.425L16.971 0z"
             opacity=".25" />
         </svg>
@@ -71,7 +72,5 @@
       <img src="images/image-rules-bonus.svg" alt="" class="rules-modal_img" />
     </div>
   </div>
-  
 </body>
-
 </html>
